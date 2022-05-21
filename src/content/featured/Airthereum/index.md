@@ -1,7 +1,7 @@
 ---
 date: '2019-03-01'
 title: 'Airthereum'
-cover: './air.jpg'
+cover: './airthereum.png'
 github: ''
 external: 'https://flyapp.io/'
 tech:

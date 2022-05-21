@@ -1,6 +1,6 @@
 ---
 title: 'About Me'
-avatar: './me.jpg'
+avatar: './me.png'
 skills:
   - Java / Kotlin
   - Android
