@@ -257,13 +257,16 @@ const Featured = ({ data }) => {
                     )}
                   </Links>
                 </ContentContainer>
-
-                <ImgContainer
-                  href={external ? external : github ? github : '#'}
-                  target="_blank"
-                  rel="nofollow noopener noreferrer">
-                  <FeaturedImg fluid={cover.childImageSharp.fluid} />
-                </ImgContainer>
+                {cover ? (
+                  <ImgContainer
+                    href={external ? external : github ? github : '#'}
+                    target="_blank"
+                    rel="nofollow noopener noreferrer">
+                    <FeaturedImg fluid={cover.childImageSharp.fluid} />
+                  </ImgContainer>
+                ) : (
+                  console.log('Missing cover for:', title)
+                )}
               </Project>
             );
           })}
