@@ -5,7 +5,7 @@ WORKDIR /app
 
 RUN apt update && apt install -y libglu1
 
-COPY ./package*.json ./
+COPY ./package.json ./
 RUN npm install
 
 COPY gatsby-*.js ./
