@@ -3,7 +3,7 @@ FROM node:10.13.0 as build
 WORKDIR /app
 
 
-RUN apt update && apt install -y libglu1
+RUN apt update && apt install -y libglu1 libz
 
 COPY ./package.json ./
 RUN npm install
