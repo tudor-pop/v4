@@ -12,6 +12,7 @@ skills:
   - Terraform
   - Java
   - Spring-Boot
+  - PostgreSQL
 ---
 
 Hello! I'm Tudor, a software engineer based in Cluj-Napoca, Romania who enjoys building things that live on the web.
