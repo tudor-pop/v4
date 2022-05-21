@@ -1,4 +1,4 @@
-FROM node:12.13 as build
+FROM node:10.13.0 as build
 
 WORKDIR /app
 
@@ -13,7 +13,7 @@ COPY . .
 RUN ["npm" ,"run" ,"build"]
 
 
-FROM node:12.13-alpine
+FROM node:10.13.0-alpine
 
 RUN npm i -g serve
 
