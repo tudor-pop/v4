@@ -20,7 +20,7 @@ module.exports = {
     },
     {
       name: 'Linkedin',
-      url: 'https://www.linkedin.com/in/tudor-pop-21958bb5/',
+      url: 'https://www.linkedin.com/in/tudor-pop-bb000a222/',
     },
     {
       name: 'Twitter',
