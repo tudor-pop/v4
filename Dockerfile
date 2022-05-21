@@ -1,9 +1,9 @@
-FROM node:10.13.0-alpine as build
+FROM node:10.13.0 as build
 
 WORKDIR /app
 
 
-RUN apk update && apk add libglu1
+RUN sudo apt update && sudo apt install -y libglu1
 
 COPY ./package*.json ./
 RUN npm install
