@@ -1,7 +1,9 @@
-FROM node:12.13-alpine as build
+FROM node:10.13.0-alpine as build
 
 WORKDIR /app
 
+
+RUN apk update && apk add -y libglu1
 
 COPY ./package*.json ./
 RUN npm install
@@ -14,12 +16,12 @@ COPY . .
 RUN ["npm" ,"run" ,"build"]
 
 
-FROM node:12.13-alpine
+FROM node:12.13.0-alpine
 
 RUN npm i -g serve
 
 WORKDIR /app
-EXPOSE 5000
+EXPOSE 3000
 
 COPY --from=build /app/public ./
 
