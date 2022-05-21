@@ -6,6 +6,7 @@ login:
 	echo $CR_PAT | docker login ghcr.io -u tudor-pop --password-stdin
 
 run:
+	docker rm -rf v4
 	docker run -p 5000:3000  -dit --name v4 ghcr.io/tudor-pop/v4
 
 push:
