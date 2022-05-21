@@ -182,7 +182,7 @@ const Project = styled.div`
     }
     ${ImgContainer} {
       grid-column: 1 / 8;
-      ${media.tablet`height: 100%;`};
+      ${media.tablet`height: 80%;`};
       ${media.thone`
         grid-column: 1 / -1;
         opacity: 0.25;

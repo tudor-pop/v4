@@ -3,7 +3,7 @@ date: '2016-07-01'
 title: 'Firebase Cloud Messaging'
 cover: './firebase.png'
 github: 'https://github.com/PopTudor/Java-fcm'
-external: 'https://firebase.google.com/docs/cloud-messaging'
+external: 'https://github.com/PopTudor/Java-fcm'
 tech:
   - Java
   - OkHTTP + Retrofit
