@@ -3,7 +3,7 @@ FROM node:10.13.0-alpine as build
 WORKDIR /app
 
 
-RUN apk update && apk add -y libglu1
+RUN apk update && apk add libglu1
 
 COPY ./package*.json ./
 RUN npm install
