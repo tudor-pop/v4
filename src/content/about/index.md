@@ -4,11 +4,13 @@ avatar: './me.png'
 skills:
   - Docker
   - Kubernetes
-  - Prometheus | Elastic
-  - AWS | Azure | GCP | DO | Linode
-  - CI | CD
-  - Ansible | Terraform
-  - Java | Kotlin
+  - Prometheus
+  - Elastic
+  - AWS Azure
+  - CI/CD
+  - Ansible
+  - Terraform
+  - Java
   - Spring-Boot
 ---
 

@@ -3,7 +3,7 @@ date: '2017-9-01'
 title: 'Engineer'
 company: 'Servustech'
 location: 'Cluj-Napoca, Romania'
-range: 'Sep 2017 - Present'
+range: 'Sep 2017 - Dec 2021'
 url: 'https://www.servustech.com/'
 ---
 
