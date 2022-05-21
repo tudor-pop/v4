@@ -16,7 +16,7 @@ module.exports = {
   socialMedia: [
     {
       name: 'Github',
-      url: 'https://github.com/poptudor/',
+      url: 'https://github.com/tudor-pop',
     },
     {
       name: 'Linkedin',
