@@ -23,7 +23,7 @@ spec:
       imagePullSecrets:
         - name: github-reg-cred
       containers:
-        - image: ghcr.io/tudor-pop/v4
+        - image: ghcr.io/tudor-pop/v4:1.0
           imagePullPolicy: IfNotPresent
           name: tudorpop
           ports:

@@ -1,5 +1,5 @@
 build:
-	docker build -t ghcr.io/tudor-pop/v4 .
+	docker build -t ghcr.io/tudor-pop/v4:1.0 . --platform linux/amd64
 
 login:
 	export CR_PAT=
@@ -7,10 +7,10 @@ login:
 
 run:
 	docker rm -f v4
-	docker run -p 5000:3000  -dit --name v4 ghcr.io/tudor-pop/v4
+	docker run -p 5000:3000  -dit --name v4 ghcr.io/tudor-pop/v4:1.0
 
 push:
-	docker push ghcr.io/tudor-pop/v4:latest
+	docker push ghcr.io/tudor-pop/v4:1.0
 
 pull:
 	docker pull ghcr.io/tudor-pop/v4
