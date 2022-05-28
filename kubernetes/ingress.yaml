@@ -19,7 +19,7 @@ spec:
               service:
                 name: tudorpop
                 port:
-                  number: 3000
+                  number: 80
 
   tls:
     - hosts:
