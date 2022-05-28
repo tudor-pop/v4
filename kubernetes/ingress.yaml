@@ -1,0 +1,28 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    #    cert-manager.io/cluster-issuer: letsencrypt-staging
+    cert-manager.io/cluster-issuer: letsencrypt-production
+    nginx.ingress.kubernetes.io/rewrite-target: /
+  name: ingress
+  namespace: tudorpop
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: tudor-pop.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: tudorpop
+                port:
+                  number: 3000
+
+  tls:
+    - hosts:
+        - tudor-pop.com
+      #      secretName: letsencrypt-staging
+      secretName: letsencrypt-production

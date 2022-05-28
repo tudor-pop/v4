@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tudorpop
+  namespace: tudorpop
+spec:
+  progressDeadlineSeconds: 600
+  replicas: 3
+  revisionHistoryLimit: 10
+  selector:
+    matchLabels:
+      app: tudorpop
+  strategy:
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        app: tudorpop
+    spec:
+      imagePullSecrets:
+        - name: github-reg-cred
+      containers:
+        - image: ghcr.io/tudor-pop/v4
+          imagePullPolicy: IfNotPresent
+          name: tudorpop
+          ports:
+            - containerPort: 3000
+              protocol: TCP
+              name: 'default-port'
