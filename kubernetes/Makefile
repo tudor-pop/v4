@@ -5,3 +5,5 @@ login:
 		--docker-password=<https://github.com/settings/tokens/new> \
 		--docker-email=<your-email>
 
+debug-ingress-certificate:
+	kubectl get challenges.acme.cert-manager.io -o wide

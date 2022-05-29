@@ -23,6 +23,7 @@ spec:
 
   tls:
     - hosts:
-        - tudor-pop.com
+        - 'tudor-pop.com'
+        - '*.tudor-pop.com'
       #      secretName: letsencrypt-staging
       secretName: letsencrypt-production
